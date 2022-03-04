@@ -58,6 +58,7 @@ function addLeadingZero(value) {
 
 buttonStartEl.addEventListener("click", () => {
   buttonStartEl.disabled = true;
+  myInput.disabled = true;
  const timerId = setInterval(() => {
     dateBegin -= 1000;
     const arrayDateTime = convertMs(dateBegin-dateEnd);
